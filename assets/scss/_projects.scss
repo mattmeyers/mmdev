@@ -1,0 +1,48 @@
+.projects {
+    max-width: 70%;
+
+    .project {
+        display: flex;
+        margin-bottom: 1.9em;
+        line-height: normal;
+
+        @media #{$media-size-tablet} {
+            display: block;
+        }
+
+        &-title {
+            margin-top: .2em;
+            font-size: 2em;
+            text-align: left;
+            min-width: 7em;
+
+            @media #{$media-size-tablet} {
+                text-align: center;
+            }
+        }
+
+        &-summary {
+            font-size: 1.2em;
+        }
+
+        ul {
+            width: 100%;
+        }
+
+        li {
+            list-style: none;
+            text-align: center;
+            margin-bottom: 0.1em;
+
+            @media #{$media-size-tablet} {
+                text-align: center;
+            }
+
+        }
+
+        .project-content {
+            text-align: left;
+        }
+
+    }
+}

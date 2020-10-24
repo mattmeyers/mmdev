@@ -1,0 +1,21 @@
+{{ define "main" }}    
+    <main class="projects">
+        <h1>{{ .Title }}</h1>
+        
+        {{ if .Content }}
+            <div class="content">{{ .Content }}</div>
+        {{ end }}
+
+        {{ range sort .Data.Pages }}
+            <hr>
+            <div class="project">
+                <div class="project-title">{{.Title}}</div>
+                <ul>
+                    <li class="project-summary">{{.Params.summary}}</li>
+                    <li>{{ if ne .Params.version "WIP"}}v{{ end }}{{.Params.version}} // <a href="{{.Params.link}}">Source</a></li>
+                    <li class="project-content">{{.Content}}</li>
+                </ul>
+            </div>
+        {{ end }}
+    </main>
+{{ end }}
