@@ -1,0 +1,39 @@
+.resume-section {
+    text-align: center;
+}
+
+.work {
+    .company {
+        &-name {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5em;
+        }
+        
+        .position {
+            &-name {
+                font-size: 1.1em;
+                display: flex;
+                justify-content: space-between;
+                margin-top: 0em;
+            }
+        }
+    }
+}
+
+.education {
+    .school {
+        &-name {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5em;
+        }
+        
+        .major {
+            font-size: 1.1em;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 0em;
+        }
+    }
+}
