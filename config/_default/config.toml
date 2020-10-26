@@ -56,12 +56,12 @@ trimTrailingSlash = true
   [[menu.main]]
     identifier = "about"
     name       = "About"
-    url        = "about/"
+    url        = "/about/"
   [[menu.main]]
     identifier = "projects"
     name       = "Projects"
-    url        = "projects/"
+    url        = "/projects/"
   [[menu.main]]
     identifier = "resume"
     name       = "Resume"
-    url        = "resume/"
+    url        = "/resume/"
