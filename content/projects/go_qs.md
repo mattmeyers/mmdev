@@ -9,7 +9,7 @@ draft: false
 weight: 300
 ---
 
-Inspired by NodeJS's [`qs` library](https://www.npmjs.com/package/qs), `go-qs` provides the ability to parse and build nested query strings. Transferring complex data structures through a query string can be difficult and Go's standard library parser only allows for basic key-value parsing. This library further parses query strings with nested keys. For example, the query string `key[subkey]=value` will be parsed into the map structure
+Inspired by NodeJS's {{< extlink href="https://www.npmjs.com/package/qs" title="qs library" >}}, `go-qs` provides the ability to parse and build nested query strings. Transferring complex data structures through a query string can be difficult and Go's standard library parser only allows for basic key-value parsing. This library further parses query strings with nested keys. For example, the query string `key[subkey]=value` will be parsed into the map structure
 
 ```go
 {

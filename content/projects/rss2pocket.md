@@ -8,4 +8,4 @@ draft: false
 weight: 400
 ---
 
-[Pocket](https://getpocket.com) is a news/link aggregation app that allows users to save any link for later by using their browser extension or mobile app. However, Pocket is unable to automatically listen for new items in a RSS/Atom feed. `rss2pocket` solves this problem by checking configured feeds for new items, and then pushing these items to Pocket via the Pocket REST API. By automating the execution of this command with a tool like `cron`, Pocket can become an automatically updated personal repository of blog posts and articles.
+{{< extlink href="https://getpocket.com" title="Pocket" >}} is a news/link aggregation app that allows users to save any link for later by using their browser extension or mobile app. However, Pocket is unable to automatically listen for new items in a RSS/Atom feed. `rss2pocket` solves this problem by checking configured feeds for new items, and then pushing these items to Pocket via the Pocket REST API. By automating the execution of this command with a tool like `cron`, Pocket can become an automatically updated personal repository of blog posts and articles.
