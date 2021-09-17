@@ -4,7 +4,7 @@ date: 2020-10-22T01:49:27-04:00
 draft: false
 ---
 
-I'm the lead software engineer at {{< extlink href="https://mcgstrategic.com" title="MCG Strategic" >}} in Marlton, NJ. Over the past few years, I've specialized in backend development using Go and PostgreSQL. I spend most of my days designing and implementing REST APIs and databases to power our client's custom websites and web applications. I take pride in writing code that is well documented, easy to maintain, and naturally extensible.
+I'm a software engineer at {{< extlink href="https://madwire.com" title="Madwire" >}} in Fort Collins, CO (although I work remotely from Virginia). Nowadays I'm mainly a backend PHP engineer, but I occasionally get to work with Go and Typescript. I take pride in writing code that is well documented, easy to maintain, and naturally extensible.
 
 Outside of work I enjoy deepening my knowledge in various computer science topics. Lately I've been interested in programming language theory, compiler design, and computer networking. I also enjoy working on open source projects including a {{< extlink href="https://github.com/mattmeyers/vscode-dbml" title="VS Code extension" >}} and some Go libraries. Check out my [projects page](/projects/) for more details.
 
