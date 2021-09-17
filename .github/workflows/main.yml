@@ -30,4 +30,4 @@ jobs:
         run: ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
         
       - name: Deploy
-        run: rsync -avz ./public/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/home/matt/www/mmdev/public/
+        run: rsync -avzr ./public/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/home/matt/www/mmdev/public/
