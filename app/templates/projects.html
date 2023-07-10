@@ -1,0 +1,25 @@
+{{template "base.html" .}}
+
+{{define "content"}}
+<div class="content projects">
+  <div class="title">
+    Projects
+  </div>
+
+  {{ range .Projects }}
+  <hr>
+  <div class="project">
+    <div class="project__title">{{.Title}}</div>
+    <ul class="project__info">
+      <li class="project__summary">{{.Summary}}</li>
+      <li>
+        {{.Version}} //
+        <a href="{{.Link}}" rel="noopener" target="_blank">Source</a>
+        {{if .Docs}} // <a href="{{.Docs}}" rel="noopener" target="_blank">Docs</a>{{ end }}
+      </li>
+      <li class="project__content">{{.Content}}</li>
+    </ul>
+  </div>
+  {{ end }}
+</div>
+{{end}}
