@@ -1,0 +1,87 @@
+:root {
+    font-family: 'Inter', sans-serif;
+
+    /** CSS DARK THEME PRIMARY COLORS */
+    --color-primary-100:  #113462;
+    --color-primary-200:  #304772;
+    --color-primary-300:  #4a5c83;
+    --color-primary-400:  #637194;
+    --color-primary-500:  #7c87a5;
+    --color-primary-600:  #959eb7;
+     
+     
+    /** CSS DARK THEME SURFACE COLORS */
+    --color-surface-100:  #121212;
+    --color-surface-200:  #282828;
+    --color-surface-300:  #3f3f3f;
+    --color-surface-400:  #575757;
+    --color-surface-500:  #717171;
+    --color-surface-600:  #8b8b8b;
+     
+     
+    /** CSS DARK THEME MIXED SURFACE COLORS */
+    --color-surface-mixed-100:  #14161a;
+    --color-surface-mixed-200:  #292b2f;
+    --color-surface-mixed-300:  #404245;
+    --color-surface-mixed-400:  #585a5d;
+    --color-surface-mixed-500:  #727376;
+    --color-surface-mixed-600:  #8c8d90;
+
+    --color-font: #e7e7e7;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--color-surface-mixed-100);
+    color: var(--color-font);
+}
+
+a {
+    color: var(--color-font);
+    text-decoration-color: var(--color-primary-500);
+    text-decoration-thickness: .125em;
+    text-underline-offset: 1.5px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 20% 0 20%;
+    height: 5rem;
+
+    background-color: var(--color-surface-mixed-200);
+}
+
+header a {
+    text-decoration: none;
+    color: var(--color-font);
+}
+
+.header-title {
+    font-size: 1.5rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex: 1 auto;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20% 0 20%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
