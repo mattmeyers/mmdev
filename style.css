@@ -58,6 +58,10 @@ header {
     padding: 0 20% 0 20%;
     height: 5rem;
 
+    @media screen and (max-width: 684px) {
+       padding: 0 10% 0 10%; 
+    }
+
     background-color: var(--color-surface-mixed-200);
 }
 
@@ -70,7 +74,7 @@ header a {
     font-size: 1.5rem;
 }
 
-.content {
+main {
     display: flex;
     flex-direction: column;
     flex: 1 auto;
@@ -79,9 +83,4 @@ header a {
     padding: 0 20% 0 20%;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+
