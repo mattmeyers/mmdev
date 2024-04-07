@@ -20,6 +20,8 @@ func (s *Server) loadRoutes() {
 	s.Router.Get("/", s.handleAppIndex())
 	s.Router.Get("/about", s.handleAppAbout())
 	s.Router.Get("/projects", s.handleAppProjects())
+	s.Router.Get("/login", s.handleAppLogin())
+	s.Router.Get("/dashboard", s.handleAppDashboard())
 
 	s.Router.Handle("/*", http.FileServer(http.FS(app.Favicons)))
 }

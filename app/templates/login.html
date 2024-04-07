@@ -1,0 +1,47 @@
+{{template "base.html" .}}
+
+{{define "content"}}
+<div>
+    <div>
+        <label for="username">Email:</label>
+        <input id="username" type="text"></input>
+    </div>
+    <div>
+        <label for="password">Password:</label>
+        <input id="password" type="password"></input>
+    </div>
+    <div>
+        <span id="failed-msg" hidden>Login failed</span>
+    </div>
+    <button id="submit" type="button">Submit</button>
+</div>
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+        document.getElementById("submit").addEventListener("click", async function(e) {
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+
+            try {
+                const res = await fetch(
+                    "http://localhost:8080/api/v1/auth/login",
+                    {
+                        method: "POST",
+                        body: JSON.stringify({username, password}),
+                        credentials: 'include',
+                    }
+                );
+
+                if (!res.ok) {
+                    document.getElementById("failed-msg").removeAttribute("hidden");
+                    return;
+                }
+
+                window.location.replace("/dashboard");
+            } catch (e) {
+                document.getElementById("failed-msg").removeAttribute("hidden");
+            }
+        });
+    });
+</script>
+{{end}}
+

@@ -1,0 +1,30 @@
+{{template "base.html" .}}
+
+{{define "content"}}
+<div>
+    <h1>DASHBOARD</h1>
+    <button id="logout">Logout</button>
+</div>
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+        document.getElementById("logout").addEventListener("click", async function(e) {
+            try {
+                const res = await fetch(
+                    "http://localhost:8080/api/v1/auth/logout",
+                    { method: "POST", credentials: 'include' }
+                );
+
+                if (!res.ok) {
+                    alert("COULDN'T LOGOUT")
+                    return;
+                }
+
+                window.location.replace("/");
+            } catch (e) {
+                alert("COULDN'T LOGOUT")
+            }
+        });
+    });
+</script>
+{{end}}
+

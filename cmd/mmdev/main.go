@@ -11,7 +11,7 @@ func main() {
 	srv.Logger, _ = level.NewBasicLogger(level.Info, nil)
 	srv.Resources = app.Resources
 
-	if err := srv.ListenAndServe(":8080"); err != nil {
+	if err := srv.ListenAndServe(":8081"); err != nil {
 		panic(err)
 	}
 }
