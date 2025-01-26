@@ -1,4 +1,6 @@
 :root {
+    font-family: sans-serif;
+
     /** CSS DARK THEME PRIMARY COLORS */
     --color-primary-100:  #113462;
     --color-primary-200:  #304772;
